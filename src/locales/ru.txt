@@ -1,0 +1,8 @@
+main-menu = Привет, ${name}!
+my-notes = Мои заметки
+back-button = Назад
+hide-button = Скрыть
+refresh-button = Обновить
+cancel-button = Отменить
+profile-button = Настройки профиля
+profile-menu = Настройки профиля, выберите предпочтительный язык

@@ -1,0 +1,8 @@
+main-menu = Hi, ${name}!
+my-notes = My notes
+back-button = Back
+hide-button = Hide
+refresh-button = Refresh
+cancel-button = Cancel
+profile-button = Profile settings
+profile-menu = Profile settings, choose your preferred language

@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+  "ignore": ["src/locales/generated"],
+  "ext": "ts,txt",
+  "exec": "npm run generate-locale && tsx src/index.ts"
+}
