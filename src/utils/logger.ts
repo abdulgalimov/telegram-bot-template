@@ -1,4 +1,4 @@
-import type { TgLogger, TgLoggerFactory } from '@abdulgalimov/tg-framework';
+import type { TgLogger, TgLoggerFactory } from '@abdulgalimov/telegram';
 
 const LogLevel = {
   ERROR: 'error',

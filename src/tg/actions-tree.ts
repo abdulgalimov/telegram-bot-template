@@ -1,4 +1,4 @@
-import { payloadSchema } from '@abdulgalimov/tg-framework';
+import { payloadSchema } from '@abdulgalimov/telegram';
 
 const core = {
   none: {},

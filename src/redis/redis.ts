@@ -1,4 +1,4 @@
-import type { KvStore } from '@abdulgalimov/tg-framework';
+import type { KvStore } from '@abdulgalimov/telegram';
 import { Redis } from 'ioredis';
 import { redisConfig } from '../config';
 import { JSONBigIntParse, JSONBigIntStringify } from '../utils';

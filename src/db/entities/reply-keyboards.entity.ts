@@ -1,4 +1,4 @@
-import { ReplyButtonPayload } from '@abdulgalimov/tg-framework';
+import { ReplyButtonPayload } from '@abdulgalimov/telegram';
 import { integer, jsonb, pgTable, text, timestamp, uuid, varchar } from 'drizzle-orm/pg-core';
 import { createInsertSchema, createSelectSchema } from 'drizzle-typebox';
 import { Static } from '@sinclair/typebox';

@@ -1,4 +1,4 @@
-import { Telegram } from '@abdulgalimov/tg-framework';
+import { Telegram } from '@abdulgalimov/telegram';
 
 import { User } from '../types';
 import { LocaleKeysType } from '../locales/generated/locale-types';

@@ -1,5 +1,5 @@
 import { eq } from 'drizzle-orm';
-import type { ReplyButtonPayload, ReplyKeyboardsStore } from '@abdulgalimov/tg-framework';
+import type { ReplyButtonPayload, ReplyKeyboardsStore } from '@abdulgalimov/telegram';
 import * as schema from '../entities';
 import { replyKeyboards } from '../entities';
 import { NodePgDatabase } from 'drizzle-orm/node-postgres';

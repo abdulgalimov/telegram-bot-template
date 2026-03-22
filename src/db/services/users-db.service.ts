@@ -1,4 +1,4 @@
-import type { UsersStore } from '@abdulgalimov/tg-framework';
+import type { UsersStore } from '@abdulgalimov/telegram';
 import type { User } from '../../types';
 import { users } from '../entities';
 import { NodePgDatabase } from 'drizzle-orm/node-postgres';

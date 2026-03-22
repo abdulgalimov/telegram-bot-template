@@ -1,4 +1,4 @@
-import type { ActionsStore } from '@abdulgalimov/tg-framework';
+import type { ActionsStore } from '@abdulgalimov/telegram';
 import { actions } from '../entities';
 import { NodePgDatabase } from 'drizzle-orm/node-postgres';
 import * as schema from '../entities';

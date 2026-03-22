@@ -1,7 +1,7 @@
 import { BaseHandler } from '../base';
 import { tg } from '../../tg';
 import { Context, ContextAny } from '../../types';
-import { UpdateResult } from '@abdulgalimov/tg-framework';
+import { UpdateResult } from '@abdulgalimov/telegram';
 
 export class ProfileHandler extends BaseHandler {
   public async update() {

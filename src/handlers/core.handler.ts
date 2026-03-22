@@ -1,4 +1,4 @@
-import { UpdateResult } from '@abdulgalimov/tg-framework';
+import { UpdateResult } from '@abdulgalimov/telegram';
 
 import { BaseHandler, HandlerOptions } from './base';
 import { Context, ContextAny } from '../types';

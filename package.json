@@ -6,7 +6,7 @@
     "build": "tsup",
     "start": "node dist/index.js",
     "dev": "nodemon",
-    "generate-locale": "tg-framework",
+    "generate-locale": "telegram-prepare",
     "typecheck": "tsc --noEmit",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
@@ -14,7 +14,7 @@
     "format:check": "prettier --check \"src/**/*.ts\""
   },
   "dependencies": {
-    "@abdulgalimov/tg-framework": "file:///Users/zaur/work/tg-framework/tg-framework",
+    "@abdulgalimov/telegram": "0.0.2",
     "@grammyjs/types": "^3.16.0",
     "@opentelemetry/api": "^1.9.0",
     "@sinclair/typebox": "^0.34.33",

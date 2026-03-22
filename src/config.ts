@@ -1,4 +1,4 @@
-import type { TelegramConfig } from '@abdulgalimov/tg-framework';
+import type { TelegramConfig } from '@abdulgalimov/telegram';
 
 export const telegramConfig: TelegramConfig = {
   apiUrl: process.env.TELEGRAM_API_URL || 'https://api.telegram.org',

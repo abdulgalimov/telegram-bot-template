@@ -3,7 +3,7 @@ import type {
   UserContextAny,
   Context as ContextTg,
   ContextOptions,
-} from '@abdulgalimov/tg-framework';
+} from '@abdulgalimov/telegram';
 
 export interface User extends TgUser {
   id: bigint;

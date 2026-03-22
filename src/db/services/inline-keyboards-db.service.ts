@@ -1,4 +1,4 @@
-import type { InlineKeyboardsStore } from '@abdulgalimov/tg-framework';
+import type { InlineKeyboardsStore } from '@abdulgalimov/telegram';
 import { eq, and, inArray } from 'drizzle-orm';
 import { inlineKeyboards } from '../entities';
 import { NodePgDatabase } from 'drizzle-orm/node-postgres';

@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import { telegramConfig } from './config';
 import { Db } from './db';
-import { TelegramStore } from '@abdulgalimov/tg-framework';
+import { TelegramStore } from '@abdulgalimov/telegram';
 import { User } from './types';
 import { RedisKvStore } from './redis';
 import { tg } from './tg';
