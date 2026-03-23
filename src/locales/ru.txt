@@ -6,3 +6,6 @@ refresh-button = Обновить
 cancel-button = Отменить
 profile-button = Настройки профиля
 profile-menu = Настройки профиля, выберите предпочтительный язык
+change-name-button = Изменить имя
+send-new-name = Напишите новое имя
+save-new-name = Сохранить новое имя: ${name}?

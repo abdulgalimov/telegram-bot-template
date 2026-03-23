@@ -17,7 +17,7 @@ export class MainHandler extends BaseHandler {
     await tg.request.reply({
       text: tg.locale.text('main-menu', {
         args: {
-          name: user.firstName,
+          name: user.fullName,
         },
       }),
       reply_markup: {

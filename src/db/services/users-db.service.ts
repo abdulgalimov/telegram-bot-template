@@ -41,6 +41,7 @@ export class UsersDbService implements UsersStore<User> {
         telegramId: users.telegramId,
         firstName: users.firstName,
         lastName: users.lastName,
+        fullName: users.fullName,
         username: users.username,
         langCode: users.langCode,
       });
@@ -51,12 +52,16 @@ export class UsersDbService implements UsersStore<User> {
       langCode: row.langCode,
       firstName: data.firstName,
       lastName: data.lastName,
-      fullName,
+      fullName: row.fullName,
       username: data.username,
     };
   }
 
   public async updateLanguage(id: bigint, langCode: string) {
     await this.db.update(users).set({ langCode }).where(eq(users.id, id));
+  }
+
+  public async updateName(id: bigint, fullName: string) {
+    await this.db.update(users).set({ fullName }).where(eq(users.id, id));
   }
 }

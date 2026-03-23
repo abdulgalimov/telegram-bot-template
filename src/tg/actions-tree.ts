@@ -39,5 +39,10 @@ export const actionsTree = {
         langCode: payloadSchema.string(),
       }),
     },
+    name: {
+      progress: {},
+      cancel: {},
+      save: {},
+    },
   },
 } as const;
