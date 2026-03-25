@@ -8,6 +8,7 @@ const core = {
       command: payloadSchema.string(),
       value: payloadSchema.string().optional(),
     }),
+    test: {},
   },
   text: {},
   inline: {

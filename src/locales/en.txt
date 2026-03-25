@@ -6,3 +6,6 @@ refresh-button = Refresh
 cancel-button = Cancel
 profile-button = Profile settings
 profile-menu = Profile settings, choose your preferred language
+change-name-button = Change name
+send-new-name = Write new name
+save-new-name = Save new name: ${name}?

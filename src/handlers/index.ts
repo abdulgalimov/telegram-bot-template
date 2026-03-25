@@ -1,2 +1,3 @@
-export * from './base';
-export * from './bot.handler';
+import './core.handler';
+import './main.handler';
+import './profile';

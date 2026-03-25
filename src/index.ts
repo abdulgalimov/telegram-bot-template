@@ -1,20 +1,18 @@
 import 'dotenv/config';
 import { telegramConfig } from './config';
-import { Db } from './db';
 import { TelegramStore } from '@abdulgalimov/telegram';
 import { User } from './types';
 import { RedisKvStore } from './redis';
 import { tg } from './tg';
 import * as fs from 'node:fs';
-import { BotHandler, HandlerOptions } from './handlers';
+import { db } from './db';
+import './handlers';
 
 async function main() {
   if (!telegramConfig.token) {
     console.error('BOT_TOKEN is required. Set it in .env file.');
     process.exit(1);
   }
-
-  const db = new Db();
 
   const store: TelegramStore<User> = {
     actions: db.actions,
@@ -42,13 +40,12 @@ async function main() {
     kv,
   });
 
-  const options: HandlerOptions = {
-    db,
-  };
-
-  const botHandler = new BotHandler(options);
-
-  await tg.init(() => botHandler.update());
+  await tg.init(async () => {
+    const ctx = tg.context.get();
+    console.log('unknown handler', {
+      action: ctx.action.meta.fullKey,
+    });
+  });
 
   const shutdown = async () => {
     console.log('Stopping bot...');

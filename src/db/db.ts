@@ -35,3 +35,5 @@ export class Db {
     this.replyKeyboards = new ReplyKeyboardsDbService(this.db);
   }
 }
+
+export const db = new Db();
