@@ -47,6 +47,8 @@ async function main() {
     });
   });
 
+  tg.update.startLongpoll();
+
   const shutdown = async () => {
     console.log('Stopping bot...');
     await kv.stop();
