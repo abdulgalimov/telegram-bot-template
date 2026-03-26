@@ -22,7 +22,7 @@ async function main() {
   };
   const kv = new RedisKvStore();
 
-  tg.create({
+  await tg.create({
     store,
     locale: {
       locales: [
@@ -38,13 +38,12 @@ async function main() {
       defaultLocale: 'ru',
     },
     kv,
-  });
-
-  await tg.init(async () => {
-    const ctx = tg.context.get();
-    console.log('unknown handler', {
-      action: ctx.action.meta.fullKey,
-    });
+    defaultHandler: async () => {
+      const ctx = tg.context.get();
+      console.log('unknown handler', {
+        action: ctx.action.meta.fullKey,
+      });
+    },
   });
 
   tg.update.startLongpoll();
